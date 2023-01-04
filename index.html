@@ -378,12 +378,18 @@
             </ul>
         </div>
         <div class="subscription-box">
-          <p class="text">Підпишіться на розсилку</p> 
+          <p class="subscription-text">Підпишіться на розсилку</p> 
+        <div class="subscription-form-box">
           <form class="subscription-form">
-            <input class="subscription-button"/>
+            <input class="subscription-input" placeholder="E-mail"/>
+            <button class="subscription-button" type="submit">
+                Підписатися
+                <svg class="subscription-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
             </form>
-          
-            <button class="button" type="button">Підписатися</button>
+        </div>
             </div>
         </div>
     </div>
@@ -430,8 +436,9 @@
                 placeholder="Введіть текст"></textarea>
 
             <div class="checkbox-box">
-             <input type="checkbox" id="checkbox" name="checkbox"/>
-             <label class="form-label-checkbox" for="checkbox">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+             <input class="checkbox" type="checkbox" id="checkbox" name="checkbox"/>
+             <label class="form-label-checkbox" for="checkbox">Погоджуюся з розсилкою та приймаю 
+                <a class="checkbox-link" href="#">Умови договору</a></label>
              <button class="form-submit" type="submit">Відправити</button>
             </div>
             
